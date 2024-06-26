@@ -1,11 +1,8 @@
 Feature: CreateLead functionality of Leaftaps application
-Background:
-Given Launch the browser
-And Load the URL
 
 Scenario Outline: Create multiple Leads
 
-And Enter username as Demosalesmanager
+Given Enter username as Demosalesmanager
 And Enter password as crmsfa
 When Click the login button
 Then It should navigate to next page
@@ -23,6 +20,6 @@ Then Lead should be created
 
 Examples:
 |company|fname|lname|
-|Testleaf|Vineeth|R|
-|QEagle|Hari|R|
+|'Testleaf'|'Vineeth'|'R'|
+|'QEagle'|'Hari'|'R'|
 
